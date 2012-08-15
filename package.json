@@ -1,6 +1,6 @@
 {
   "name": "irssi-questions",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A filter stream to pull out the questions from an irssi log file",
   "main": "questions.js",
   "directories": {
