@@ -57,7 +57,9 @@ Questions.prototype._process = function () {
   this._buffer.length = 0
   var save = lines.pop()
   if (save.length && !this._ended) {
-    this._buffer.push(new Buffer(save))
+    save = new Buffer(save)
+    this._buffer.push(save)
+    this._length = save.length
   }
   lines.forEach(function (line) {
     var match = line.match(/^[0-9]{2}:[0-9]{2} <[^>]+> (?:[^:]+: )?(.*)\?$/)
