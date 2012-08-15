@@ -1,0 +1,159 @@
+why not make the same argument about any library
+what makes testing libraries special
+why not just transform the tests then
+never
+'that crap' being mocha or any test framework
+SubStack, besides the globals thing, what else
+what os
+let's just say I don't have root access. Is there a way to just get flock, configure it with --prefix=$HOME, and install that way
+so its a bit like python in that it just gets run once, and each require uses the cached version
+livinded, umm, so... no C coding
+I'm doing some research for what sort of hosting providers would profide the most affordable, scalable infastructure for a node.js application/service. Has anyone here worked on a app/service that grew at a level similar to instagr.am; rapid burst of traffic in a small time period
+
+ok, what would they target
+llvm, x86, parrot, jvm
+isn't that what NaCl is for
+why wouldn't you just use the sandboxing of your operating system
+you use your OS
+chroot
+what if you want to have setup code before the code is executed
+alex4nder, link
+If I want an in-memory key value store to be used with node.js, why would I use Redis when I can just use Node and a JSON object
+So if I don't need that, are there any other advantages
+SubStack — you still around
+nowjs
+porque
+elaborate
+Hey. Are you around
+hey guys, was listening to NodeUp podcast from a while back and someone mentioned a one-line http server in a node module (like python -m SimpleHTTPServer) - anybody know what the name is
+what if my host doesn't want to install it
+Am I still high from last night, or is my package.json being minified when I'm not looking
+BUT, what do you mean by minified
+when
+Did you run any commands or anything
+What is your editor
+yoda
+fook I did
+Is there an IRC for specific program like Unity3d
+Is there an IRC for specific programs like Unity3d
+how hard was it for you to create that browser version of stylus
+before i go further, think its even possible to do true client side generation
+Has anyone played around with the socket buffer size? it seems to be dynamic, but has really bad performance for ftp-uploading large files, it seems to be capped at 40KB, why is this
+Which version of 0.8
+how can I drop into the node cli in the middle of a script's execution
+what are you trying to do
+SubStack, are you talking about in an async env
+how do you manage/config your servers for browserling
+any projects you have that I haven't noticed yet
+really? how many nodes do you have for browsersling? you run ec2
+SubStack, that is some arcane code there, where do the `_` and `cb` references come from
+Are we loving RequireJS or hating it
+it does? since when
+any hints
+Will it cost money to send SMS text messages from Node
+I meant to ask, how does the SMS protocol work, is it like email where I can just set up the email server on my VPS then start sending email
+have you tried replacing connect.bodyParser()
+is htere a better alternative
+just use browserify and give people the output as an alternative
+anyone using mason and buildpacks for deploying node.js applications
+shouldnt it just have the raw data i posted with curl
+No help installing node then
+What do all these people do
+is there a way to flush a cached module via require
+require(path, reload)
+ok so this json middleware calls "next(err)" if there is an error. is there a way for me to "catch" that in my app and just return a generic error mesage
+do i just write my own middleware in the middle, and how
+weird a the parent process which forks a child node process doesnt receive an 'exit' or 'disconnect' event unless process.exit() was explicitly called from the chlid
+just try adding a middleware function of your own that all your routes call ? check to see if the first param is really a req or an Error obj
+did you give it weirdo xml
+What's the most proper way to check for an "exports" object to add Node.js exports to
+module.exports or just exports
+ooh... what's the difference between the two kinds of exports
+Is there a non-jankety reason to do something like that
+Huh, so if that's the reasonable thing to do, why have I been setting exports.someFunction = whatever for all this time
+when is "exports" better than "module.exports"
+when you have multiple things
+I haven't had this problem
+cause it's less typing, fuck it
+what's there to know
+then why are you using it at all
+What libraries do people use to generate annotated source
+… generate source code
+I want to add a app.use block to my existing express app that'll check if there's a prefix in url and add it as a property to the request object and rewrite the url (and all other properties affected by that prefix) so that my existing routes keep working
+does something like this already exist as a plugin or example
+
+did you really read it
+Hi guys, I'm getting socket timeout errors {"err":{"code":"ECONNRESET"}} at random times, does anyone know how to resolve this
+@bnoordhuis  what do I do? Is it a bad thing
+what are the potential reasons why my API server would hang up on my web server
+is it a fairly common error
+if your node instance died for some reason, what would you do on production to make sure that it restarts
+ok so which one basically, forever, runjs, supervisor or always
+hi, do you remember about the unix sockets issue I had yesterday? you said something there was monkey-patching. Could you point me where is this monkey-patching happening
+I only find _handle.listen inside the _listen2 prototype... how does it affect my case as I was just creating a client socket
+anybody knows something about it
+any way around this
+use a domain name that resolves? update your /etc/hosts
+but wait... shouldn't localhost resolve because it's defined in /etc/hosts
+depends - is your system mixed ipv4/ipv6
+you in
+Is it possible I'm using res.render incorrectly
+maybe if you paste your code in a pastebin i can have a look
+If i set a global within a module like `global.foo=3;` and then require that module in a second module, can I expect that the global env in that second module to contain all the globals in the first
+are you using routes
+maybe if you put a question mark at the end
+have you console.logged req.params
+
+i know the answer to this but i'll ask anyway - have you read the express documentation
+not familiar with soap, can't you use something else? or are they providing you with soap
+hmm.. how can I get the union between two arrays
+jamescarr, array.concat
+anybody know what the proper way to set Access-Control-Allow-Origin header for all routes when using connect is
+kenperkins, if the parent process dies, shouldn't the OS clean up the child processes
+I'm having a hard time running anything on the Express 3 beta. Is there a version of Jade that works with the new template API
+ok. So in 0.26.3 I can "extend" another template instead of using a layout
+and are there any examples of doing a dynamicHelper with middleware and locals
+quick, what's a good url that produces random images
+but it seems TTY is not emitting this event when I adjust the terminal window.  Is this most likely because the terminal isn't actually adjusting the row/cols of the emulated terminal device
+that's definitely a bug.  post, please
+Shouldn't the ignore file only come into play for publishing, not installing
+hey, did you find a minute to review https://github.com/isaacs/read/pull/9
+Is possible/difficult to get code coverage if running mocha in the browser
+does the template engine system attempt to handle layouts (or wrappers, or whatever), or is that completely up to the engine itself
+anyone can help with stream pipes not firing pause/resume
+Is there a way to get at the content of the running script itself?  For example, if I wanted to provide the source code from my app, could I register a mount point in my app and then send back the text contents of the script itself
+you want the entire source code, or just part of it
+are you using a web framework (e.g., express)
+will a Node project in CoffeeScript slow things down? Does it recompile on each request or when starting the Node app
+Can anyone recommend a simple template engine to dynmically create *JavaScript* from a template
+as in templated code
+what are you trying to do
+can't you just use js
+and pass in a config object to a function or something
+then inline the code? I dont see why you need a template to generate js
+are you still doing CFA
+you got an offer from fb, lol
+cool. do you know ryan resella (think he left too, though)
+which version are you using
+although, starting to sound like you're maybe not using it at all
+Hey, is there a way to use the readline module without having the characters typed echoed to the console
+are you trying to have people enter a password
+has anyone an example for a unit test using mocha and chai, testing for an exception
+leiru, wrap the exception in a try/catch?  or is it in a callback
+leiru testing for them as in asserting that something throws
+is there a way in node to add a breakpoint or something so that when you run a script and hits the break point you end up in a node REPL
+was it u
+so knox doesnt use the streams api
+does self.put ever return false
+is there anything newer for s3
+does http.ClientRequest().write() ever return false on writes
+I understand. Do you have any idea how I could modify knox-stream.js write() so that instead of doing emit('data') I could actually call the destination pipe write() and get the return value
+hey... say it is normal that nearly all npm installs fail because there is no node-waf with node.js 0.8
+ok so node-waf is still supported on *nix although it now uses node-gyp
+all packages or just the ones where authors care about it
+Error: listen EADDRINUSE  and i have to kill the node process with kill command. is it just me
+That's certainly not desired. Are you using cluster? And what version of supervisor
+so im just getting started with node, ive installed the node-mysql module, and have been experimenting. i assume that the any node files will reside outside of the public_html dir (otherwise anyone could view the connection info). but then what i don't understand is how i execute them from my regular javascript app
+austinbv, so say i have an insert.js, which reads some GET or POST data, connects to my mysql db, and inserts it. this file would live outside of public_html. but then how do i call it
+what's an example of a really good use case for node
+layers
